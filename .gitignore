@@ -14,3 +14,5 @@
 .cxx
 local.properties
 gradle/wrapper/gradle-wrapper.jar
+.idea/vcs.xml
+/.idea

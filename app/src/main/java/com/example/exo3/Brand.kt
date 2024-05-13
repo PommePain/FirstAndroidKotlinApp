@@ -1,11 +1,11 @@
 package com.example.exo3
 
 class Brand {
-    private var brand_id = 0;
-    private var brand_name = "";
-    private var brand_slug = "";
-    private var device_count = 0;
-    private var detail = "";
+    private var brand_id = 0
+    private var brand_name = ""
+    private var brand_slug = ""
+    private var device_count = 0
+    private var detail = ""
 
     constructor(brand_id: Int, brand_name: String, brand_slug: String, device_count: Int, detail: String) {
         this.brand_id = brand_id
@@ -16,11 +16,11 @@ class Brand {
     }
 
     public fun getBrandName(): String {
-        return this.brand_name;
+        return this.brand_name
     }
 
     public fun getBrandDeviceCount(): Int {
-        return this.device_count;
+        return this.device_count
     }
 
     public fun getDetail(): String {

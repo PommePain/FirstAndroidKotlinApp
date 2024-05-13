@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.TextView
+import com.squareup.picasso.Picasso
 
 class PhoneAdapter: BaseAdapter {
     private var context: Context
@@ -34,7 +36,7 @@ class PhoneAdapter: BaseAdapter {
             val inflater = LayoutInflater.from(this.context)
             v = inflater.inflate(R.layout.row_phone, null)
         } else {
-            v = convertView;
+            v = convertView
         }
 
         val currentPhone = getItem(position) as Phone
@@ -43,6 +45,8 @@ class PhoneAdapter: BaseAdapter {
 
         tvBrandName.setText(currentPhone.getBrand())
         tvPhoneName.setText(currentPhone.getName())
+
+        Picasso.get().load(currentPhone.getImage()).into(v.findViewById<ImageView>(R.id.iv_phone_image))
 
         return v
     }

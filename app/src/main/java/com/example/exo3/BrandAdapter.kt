@@ -35,7 +35,7 @@ class BrandAdapter: BaseAdapter {
             val inflater = LayoutInflater.from(this.context)
             v = inflater.inflate(R.layout.row_brand, null)
         } else {
-            v = convertView;
+            v = convertView
         }
 
         val currentBrand = getItem(position) as Brand

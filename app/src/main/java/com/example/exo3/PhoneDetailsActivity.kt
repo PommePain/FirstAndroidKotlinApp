@@ -1,7 +1,6 @@
 package com.example.exo3
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
@@ -11,10 +10,10 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONObject
 
-class BrandsPhoneActivity: AppCompatActivity() {
+class PhoneDetailsActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.brand_phones_page)
+        setContentView(R.layout.phone_details_page)
 
         val brandName : String ? = intent.extras?.getString("brandName", "Pas trouvé")
         val brandNameText = findViewById<TextView>(R.id.tv_brand_page_name)

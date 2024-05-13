@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                 }
             )
 
-            queue.add(stringRequest);
+            queue.add(stringRequest)
         }
     }
 }
